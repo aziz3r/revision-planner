@@ -20,3 +20,6 @@ docs/rapport/*.aux
 docs/rapport/*.log
 docs/rapport/*.out
 docs/rapport/*.toc
+
+# Configuration locale d outils, hors projet
+.claude/
