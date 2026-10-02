@@ -1,0 +1,19 @@
+# Variante Postgres, pour se rapprocher d'un deploiement reel.
+# Le demarrage par defaut (npm run dev) utilise SQLite et ne requiert pas Docker.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: revision_planner
+      POSTGRES_USER: strapi
+      POSTGRES_PASSWORD: strapi
+    ports: ['5432:5432']
+    volumes: ['postgres-data:/var/lib/postgresql/data']
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U strapi -d revision_planner']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres-data:
