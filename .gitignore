@@ -14,3 +14,9 @@ apps/api/database/
 # Images intermediaires de la sequence video (regenerees par npm run demo:capture).
 # Les captures numerotees, elles, sont versionnees : elles illustrent le README.
 docs/media/frames/seq-*.png
+
+# Fichiers intermediaires LaTeX (le PDF, lui, est versionne)
+docs/rapport/*.aux
+docs/rapport/*.log
+docs/rapport/*.out
+docs/rapport/*.toc
