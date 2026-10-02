@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "revision_sessions",
+  "info": {
+    "singularName": "revision-session",
+    "pluralName": "revision-sessions",
+    "displayName": "Session de revision",
+    "description": "Creneau de revision genere par le planificateur pour un examen donne."
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "startsAt": { "type": "datetime", "required": true },
+    "endsAt": { "type": "datetime", "required": true },
+    "status": {
+      "type": "enumeration",
+      "enum": ["prevue", "terminee", "annulee"],
+      "default": "prevue",
+      "required": true
+    },
+    "progress": { "type": "integer", "min": 0, "max": 100, "default": 0 },
+    "rank": { "type": "integer", "min": 1, "description": "Rang de la session, 1 = la plus proche de l examen" },
+    "comment": { "type": "string", "maxLength": 400 },
+    "exam": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exam.exam",
+      "inversedBy": "sessions"
+    }
+  }
+}

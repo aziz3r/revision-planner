@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Eleve",
+    "description": "Profil etudiant, rattache a un compte utilisateur et porteur de ses disponibilites."
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "displayName": { "type": "string", "required": true, "maxLength": 120 },
+    "availability": {
+      "type": "json",
+      "description": "Creneaux hebdomadaires : [{ weekday: 0-6, start: 'HH:mm', end: 'HH:mm' }]"
+    },
+    "sessionMinutes": { "type": "integer", "min": 15, "max": 240, "default": 60 },
+    "maxMinutesPerDay": { "type": "integer", "min": 30, "max": 720, "default": 180 },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "exams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exam.exam",
+      "mappedBy": "student"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exams",
+  "info": {
+    "singularName": "exam",
+    "pluralName": "exams",
+    "displayName": "Examen",
+    "description": "Epreuve a reviser. Le coefficient et la difficulte de la matiere determinent le volume de revision."
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "name": { "type": "string", "required": true, "maxLength": 160 },
+    "date": { "type": "datetime", "required": true },
+    "weight": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 100,
+      "default": 10
+    },
+    "kind": {
+      "type": "enumeration",
+      "enum": ["controle", "partiel", "final", "oral", "projet"],
+      "default": "controle",
+      "required": true
+    },
+    "notes": { "type": "text", "maxLength": 2000 },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject",
+      "inversedBy": "exams"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "exams"
+    },
+    "sessions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::revision-session.revision-session",
+      "mappedBy": "exam"
+    }
+  }
+}

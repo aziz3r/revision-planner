@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subjects",
+  "info": {
+    "singularName": "subject",
+    "pluralName": "subjects",
+    "displayName": "Matiere",
+    "description": "Matiere enseignee. Sa difficulte module le volume de revision calcule."
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "name": { "type": "string", "required": true, "maxLength": 120 },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": ["facile", "moyen", "difficile"],
+      "default": "moyen",
+      "required": true
+    },
+    "color": { "type": "string", "regex": "^#[0-9a-fA-F]{6}$" },
+    "exams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exam.exam",
+      "mappedBy": "subject"
+    }
+  }
+}
