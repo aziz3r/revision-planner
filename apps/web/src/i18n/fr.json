@@ -1,0 +1,118 @@
+{
+  "app": {
+    "title": "Planificateur de revisions",
+    "tagline": "Saisissez vos examens, obtenez un planning de revision."
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "exams": "Examens",
+    "availability": "Disponibilites",
+    "logout": "Deconnexion"
+  },
+  "auth": {
+    "loginTitle": "Connexion",
+    "registerTitle": "Creer un compte",
+    "email": "Adresse e-mail",
+    "username": "Nom d utilisateur",
+    "password": "Mot de passe",
+    "submitLogin": "Se connecter",
+    "submitRegister": "Creer le compte",
+    "toRegister": "Pas encore de compte ?",
+    "toLogin": "Deja inscrit ?",
+    "demoHint": "Compte de demonstration : demo@revision-planner.local / Demo1234!"
+  },
+  "dashboard": {
+    "upcoming": "Prochains examens",
+    "calendar": "Calendrier",
+    "generate": "Generer le planning",
+    "clear": "Effacer le planning",
+    "preview": "Previsualiser",
+    "empty": "Aucun examen enregistre. Commencez par en ajouter un.",
+    "weight": "Coefficient",
+    "sessions": "{{count}} session",
+    "noPlan": "Aucune session planifiee",
+    "sessions_one": "{{count}} session",
+    "sessions_other": "{{count}} sessions",
+    "hoursPlanned": "de revision planifiees"
+  },
+  "preview": {
+    "title": "Planning propose",
+    "requested": "Volume necessaire",
+    "scheduled": "Volume planifie",
+    "confirm": "Enregistrer ce planning",
+    "cancel": "Annuler",
+    "session": "Session {{index}}/{{total}}",
+    "daysBefore": "J-{{days}}",
+    "warnings": "Points d attention"
+  },
+  "unscheduled": {
+    "examen-passe": "Examen deja passe : aucune revision planifiee.",
+    "aucune-disponibilite": "Aucun creneau de disponibilite defini.",
+    "temps-insuffisant": "{{count}} session(s) n ont pas pu etre placees, faute de creneaux libres."
+  },
+  "exams": {
+    "title": "Mes examens",
+    "add": "Ajouter un examen",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "name": "Intitule",
+    "date": "Date et heure",
+    "weight": "Coefficient (1 a 100)",
+    "kind": "Type",
+    "subject": "Matiere",
+    "notes": "Notes",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "none": "Aucune",
+    "confirmDelete": "Supprimer definitivement cet examen et ses sessions ?",
+    "created": "Examen ajoute.",
+    "updated": "Examen mis a jour.",
+    "deleted": "Examen supprime."
+  },
+  "kinds": {
+    "controle": "Controle",
+    "partiel": "Partiel",
+    "final": "Examen final",
+    "oral": "Oral",
+    "projet": "Projet"
+  },
+  "difficulty": {
+    "facile": "Facile",
+    "moyen": "Moyenne",
+    "difficile": "Difficile"
+  },
+  "availability": {
+    "title": "Mes disponibilites",
+    "intro": "Indiquez quand vous acceptez de reviser. Le planning ne proposera que ces creneaux.",
+    "weekday": "Jour",
+    "start": "Debut",
+    "end": "Fin",
+    "add": "Ajouter un creneau",
+    "remove": "Retirer",
+    "sessionMinutes": "Duree d une session (minutes)",
+    "maxMinutesPerDay": "Maximum par jour (minutes)",
+    "save": "Enregistrer",
+    "saved": "Disponibilites enregistrees.",
+    "empty": "Aucun creneau : les soirees de 18h a 21h seront utilisees par defaut."
+  },
+  "weekdays": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "hours": "h",
+    "minutes": "min",
+    "retry": "Reessayer"
+  },
+  "plan": {
+    "generated": "{{count}} sessions enregistrees.",
+    "cleared": "{{count}} sessions supprimees."
+  }
+}

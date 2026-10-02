@@ -1,0 +1,118 @@
+{
+  "app": {
+    "title": "Revision planner",
+    "tagline": "Add your exams, get a revision schedule."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "exams": "Exams",
+    "availability": "Availability",
+    "logout": "Sign out"
+  },
+  "auth": {
+    "loginTitle": "Sign in",
+    "registerTitle": "Create an account",
+    "email": "Email address",
+    "username": "Username",
+    "password": "Password",
+    "submitLogin": "Sign in",
+    "submitRegister": "Create account",
+    "toRegister": "No account yet?",
+    "toLogin": "Already registered?",
+    "demoHint": "Demo account: demo@revision-planner.local / Demo1234!"
+  },
+  "dashboard": {
+    "upcoming": "Upcoming exams",
+    "calendar": "Calendar",
+    "generate": "Generate schedule",
+    "clear": "Clear schedule",
+    "preview": "Preview",
+    "empty": "No exam yet. Start by adding one.",
+    "weight": "Weight",
+    "sessions": "{{count}} session",
+    "noPlan": "No session scheduled",
+    "sessions_one": "{{count}} session",
+    "sessions_other": "{{count}} sessions",
+    "hoursPlanned": "of revision scheduled"
+  },
+  "preview": {
+    "title": "Proposed schedule",
+    "requested": "Required volume",
+    "scheduled": "Scheduled volume",
+    "confirm": "Save this schedule",
+    "cancel": "Cancel",
+    "session": "Session {{index}}/{{total}}",
+    "daysBefore": "D-{{days}}",
+    "warnings": "Warnings"
+  },
+  "unscheduled": {
+    "examen-passe": "Exam already passed: nothing scheduled.",
+    "aucune-disponibilite": "No availability slot defined.",
+    "temps-insuffisant": "{{count}} session(s) could not be placed: not enough free slots."
+  },
+  "exams": {
+    "title": "My exams",
+    "add": "Add an exam",
+    "edit": "Edit",
+    "delete": "Delete",
+    "name": "Title",
+    "date": "Date and time",
+    "weight": "Weight (1 to 100)",
+    "kind": "Kind",
+    "subject": "Subject",
+    "notes": "Notes",
+    "save": "Save",
+    "cancel": "Cancel",
+    "none": "None",
+    "confirmDelete": "Permanently delete this exam and its sessions?",
+    "created": "Exam added.",
+    "updated": "Exam updated.",
+    "deleted": "Exam deleted."
+  },
+  "kinds": {
+    "controle": "Test",
+    "partiel": "Midterm",
+    "final": "Final exam",
+    "oral": "Oral",
+    "projet": "Project"
+  },
+  "difficulty": {
+    "facile": "Easy",
+    "moyen": "Medium",
+    "difficile": "Hard"
+  },
+  "availability": {
+    "title": "My availability",
+    "intro": "Tell us when you are willing to revise. The schedule only uses these slots.",
+    "weekday": "Day",
+    "start": "Start",
+    "end": "End",
+    "add": "Add a slot",
+    "remove": "Remove",
+    "sessionMinutes": "Session length (minutes)",
+    "maxMinutesPerDay": "Daily maximum (minutes)",
+    "save": "Save",
+    "saved": "Availability saved.",
+    "empty": "No slot: evenings from 6pm to 9pm will be used by default."
+  },
+  "weekdays": {
+    "0": "Sunday",
+    "1": "Monday",
+    "2": "Tuesday",
+    "3": "Wednesday",
+    "4": "Thursday",
+    "5": "Friday",
+    "6": "Saturday"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "hours": "h",
+    "minutes": "min",
+    "retry": "Retry"
+  },
+  "plan": {
+    "generated": "{{count}} sessions saved.",
+    "cleared": "{{count}} sessions removed."
+  }
+}
